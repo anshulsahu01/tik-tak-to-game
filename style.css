@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/* heading */
+nav{
+    background-color: rgb(87, 18, 18);
+    color: white;
+    height: 62px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Roboto', sans-serif;
+}
+nav ul{
+    list-style-type: none;
+}
+.gameContainer{ 
+    /* background-color: rgb(209, 77, 77); */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.container{
+    display: grid;
+    /* gtr use nahi karing to x remove krte hi box bhi ht jayga */
+    grid-template-rows:repeat(3,10vw) ;
+    grid-template-columns:repeat(3,10vw) ;
+    font-family: 'Roboto',sans-serif;
+}
+.box{
+    border: 3px solid black;
+    font-size:10vw;
+    /* jab koi cursor leke jayga then ye change karega */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* when someone click in then it works */
+
+.box:hover{
+    background-color: rgb(240, 219, 242);
+    
+}
+.gameInfo{
+    padding: 0 34px;
+}
+.info{
+    font-size: 22px;
+}
+.gameInfo h1{
+    font-size: 2.5rem;
+}
+.imgbox img{
+    width: 0;
+    transition: width is ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset {
+    margin: 0 23px;
+    padding: 1px 18px;
+    background-color: rgb(219, 190, 247);
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+/* .line{ 
+    background-color: black;
+    width: 30vw;
+    height: 2px;
+    position:relative;
+} */
+@media screen and (max-width: 950px) 
+{ 
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top:34;
+    }
+    .container{
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3,20vw);
+    }
+ 
+    
+}
