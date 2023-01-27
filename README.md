@@ -1,2 +1,2 @@
 # tik-tak-to-game
-/anshulprojectsseries.netlify.app
+/https://anshulprojectsseries.netlify.app
